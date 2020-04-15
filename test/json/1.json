@@ -1,0 +1,129 @@
+{
+    "tabList": [{
+            "name": "1号无人机"
+        }, {
+            "name": "1号无人船"
+        },
+        {
+            "name": "大坝巡检"
+        },
+        {
+            "name": "库区巡检"
+        }
+    ],
+    "list": [{
+            "img": "http://img2.imgtn.bdimg.com/it/u=1202266680,3347909040&fm=26&gp=0.jpg",
+            "data": "2019-12-21  17:23:21",
+            "adress": "SP5-1视频站",
+            "desc": "非法钓鱼",
+            "status": "已处理",
+            "people": "刘成学"
+        },
+        {
+            "img": "http://img4.imgtn.bdimg.com/it/u=1906469856,4113625838&fm=26&gp=0.jpg",
+            "data": "2019-12-21  17:23:21",
+            "adress": "SP5-1视频站",
+            "desc": "非法钓鱼",
+            "status": "已处理",
+            "people": "刘成学"
+        }, {
+            "img": "http://img2.imgtn.bdimg.com/it/u=1202266680,3347909040&fm=26&gp=0.jpg",
+            "data": "2019-12-21  17:23:21",
+            "adress": "SP5-1视频站",
+            "desc": "非法钓鱼",
+            "status": "已处理",
+            "people": "刘成学"
+        }, {
+            "img": "http://img2.imgtn.bdimg.com/it/u=1202266680,3347909040&fm=26&gp=0.jpg",
+            "data": "2019-12-21  17:23:21",
+            "adress": "SP5-1视频站",
+            "desc": "非法钓鱼",
+            "status": "已处理",
+            "people": "刘成学"
+        }, {
+            "img": "http://img2.imgtn.bdimg.com/it/u=1202266680,3347909040&fm=26&gp=0.jpg",
+            "data": "2019-12-21  17:23:21",
+            "adress": "SP5-1视频站",
+            "desc": "非法钓鱼",
+            "status": "已处理",
+            "people": "刘成学"
+        }
+    ],
+
+    "checklist1": [{
+            "name": "安全生产隐患"
+        },
+        {
+            "name": "库区安全巡检"
+        },
+        {
+            "name": "库区安全报警"
+        },
+        {
+            "name": "水源安全报警"
+        },
+        {
+            "name": "大坝安全巡检"
+        }
+    ],
+    "checklist2": [{
+            "name": "无人船"
+        },
+        {
+            "name": "无人机"
+        },
+        {
+            "name": "泵闸站"
+        },
+        {
+            "name": "普通视频站"
+        },
+        {
+            "name": "智能视频站"
+        },
+        {
+            "name": "水量站"
+        },
+        {
+            "name": "水质站"
+        },
+        {
+            "name": "雨量站"
+        },
+        {
+            "name": "水位站"
+        },
+        {
+            "name": "大坝工情"
+        }
+    ],
+    "checklist3": [{
+            "name": "标识牌"
+        },
+        {
+            "name": "出库口"
+        },
+        {
+            "name": "入库口"
+        },
+        {
+            "name": "水工建筑物"
+        },
+        {
+            "name": "管理哨所"
+        },
+        {
+            "name": "管理范围线"
+        },
+        {
+            "name": "保护范围线"
+        }
+    ],
+    "checklist4": [{
+            "name": "应急人员"
+        },
+        {
+            "name": "应急物资"
+        }
+    ]
+}

@@ -1,0 +1,232 @@
+.container {
+    position: relative;
+    width: 4800rem;
+    height: 2030rem;
+    /* background: url('https://axure-file.lanhuhu.com/8de49187-5ddb-48d7-ac66-cdaf2ac472a4__606b6b0cb51029a075c289840cc1ea7c.png') no-repeat; */
+    background-size: 100%;
+}
+
+.nav {
+    width: 1085rem;
+    height: 1250rem;
+    position: absolute;
+    left: 90rem;
+    top: 385rem;
+}
+
+.nav-list {
+    width: 100%;
+    height: 90rem;
+    display: flex;
+    justify-content: space-between
+}
+
+.nav-menu {
+    display: inline;
+    cursor: pointer;
+    height: 90rem;
+    border: 2rem solid rgba(0, 73, 183, 1);
+    width: 342rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(7, 36, 68, 1);
+    float: left;
+    position: relative;
+}
+
+.nav-menu>p {
+    float: left;
+    color: white;
+}
+
+.nav-menu .nav-menu-icon {
+    position: absolute;
+    left: 25rem;
+}
+
+.nav-menu .nav-menu-icon i {
+    font-size: 35rem;
+}
+
+.nav-menu .nav-menu-title {
+    text-rendering: optimizeLegibility;
+    word-wrap: break-word;
+    text-transform: none;
+    font-size: 48rem;
+}
+
+
+/* panel */
+
+.panel {
+    width: 641rem;
+    height: 576rem;
+    margin-top: 20rem;
+    background: rgba(5, 31, 54, .75);
+}
+
+.panel>.panel-desc {
+    width: calc(100% - 50rem);
+    height: 82rem;
+    margin-top: 52rem;
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-left: 50rem;
+    font-size: 36rem;
+    color: #D7D7D7;
+}
+
+.panel>.panel-desc>span {
+    font-size: 72rem;
+    color: #F59A23;
+}
+
+
+/* Statistics */
+
+.Statistics {
+    width: 641rem;
+    height: 494rem;
+    background: rgba(5, 31, 54, .75);
+    margin-top: 20rem;
+    color: white;
+}
+
+.Statistics>.Statistics-desc {
+    color: #D7D7D7;
+    width: calc(100% - 50rem);
+    height: 85rem;
+    margin-left: 50rem;
+    font-size: 36rem;
+}
+
+.Statistics>.Statistics-desc>span {
+    font-size: 50rem;
+    color: #F59A23;
+}
+
+.Statistics>.Statistics-desc:nth-child(1) {
+    margin-top: 45rem;
+}
+
+.Statistics>.Statistics-desc:nth-child(3) {
+    margin-top: 65rem;
+}
+
+
+/* 多选 */
+
+.footer {
+    width: 1450rem;
+    /* height: 890rem; */
+    height: 90rem;
+    position: absolute;
+    bottom: 90rem;
+    left: 2853rem;
+    /* overflow: hidden; */
+}
+
+.checkbox-list {
+    float: left;
+    width: 320rem;
+    height: 90rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: white;
+    background: #142348;
+    position: relative;
+    margin-right: 56rem;
+}
+
+.checkbox-list:nth-child(4) {
+    margin-right: 0;
+}
+
+.checkbox-list>p {
+    float: left;
+}
+
+.checkbox {
+    margin: 0 30rem;
+}
+
+.selection-list {
+    position: absolute;
+    width: 320rem;
+    top: 0rem;
+    display: none;
+}
+
+.selection-list>ul {
+    background: #142348;
+}
+
+.selection-list li {
+    width: 100%;
+    height: 80rem;
+    font-size: 28rem;
+    line-height: 80rem;
+    border-bottom: 1rem solid #182A59;
+}
+
+.selection-list li input {
+    margin: 0 30rem;
+}
+
+
+/* 重写checkbox */
+
+.checkboxall {
+    width: 23rem;
+    height: 23rem;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 23rem;
+    position: relative;
+    margin-top: -4rem;
+    margin-right: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.checkboxall::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1rem solid #409eff;
+    background: #142348;
+}
+
+.checkboxall:checked::before {
+    content: "\2714";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #142348;
+    color: #409eff;
+    font-size: 20rem;
+    font-weight: bold;
+    border: 1rem solid #409eff;
+}
+
+.checkbox-title {
+    font-size: 28rem;
+}
+
+.iconxiangxia {
+    position: absolute;
+    right: 20rem;
+}
+
+.checkbox>i {
+    font-size: 25rem;
+}

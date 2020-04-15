@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/Inspection.css">
+    <title>Document</title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="./autoSize.min.js"></script>
+</head>
+<style>
+
+</style>
+
+<body>
+    <div class="reservoirBIM">
+        <div class="backPro" onclick="javascript:history.back(-1)">
+            <i class="iconfont iconai207"></i>
+            <span>返回</span>
+        </div>
+        <div class="tab_content">
+            <div class="imgList">
+                <ul>
+                    <li class="currentShow">
+                        <video width=100% controls="controls" autoplay="autoplay">
+                            <source src="img/plane.webm" type="video/webm">
+                        </video>
+                    </li>
+                    <li>
+                        <img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2683354411,4139667290&fm=26&gp=0.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1725415784,3706433400&fm=26&gp=0.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=273181679,892836824&fm=26&gp=0.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2771953513,444920491&fm=26&gp=0.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menuList">
+                <h3>巡检列表</h3>
+                <ul class="menu_item">
+                </ul>
+
+            </div>
+            <!-- 巡检报警 -->
+            <div class="Patrol-alarm">
+                <p class="alarm-title">巡检告警</p>
+                <div class="map_alarm" style=" position: absolute; top:1450rem;">
+                    <p class="alarm-title">实时地图</p>
+                    <img src="img/map.png"/>
+                </div>
+                
+            </div>
+            <div class="tools">
+                <p class="tools-title">巡检员：<span>张三 李思维 刘畅想</span></p>
+                <p class="tools-title">发现隐患：<span>5项</span></p>
+                <p class="tools-title">未处理：<span>1项</span></p>
+                <p class="tools-title">巡查日期：
+                    <select class="tools-select">
+                        <option value="">2019-11-11</option>
+                        <option value="">2019-12-12</option>
+                    </select>
+                </p>
+                <!-- <p class="tools-title">轨迹选择：
+                    <select class="tools-select">
+                        <option value="">轨迹1</option>
+                        <option value="">轨迹2</option>
+                        <option value="">轨迹3</option>
+                    </select>
+                </p> -->
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
+<script>
+    $(function() {
+        $.ajax({
+            url: 'json/1.json',
+            type: 'GET',
+            dataType: 'json',
+            success: function(data) {
+                for (var i = 0; i < data.tabList.length; i++) {
+                    if (i == 0) {
+                        $(".menu_item").append("<li class='list titleClick'>" + data.tabList[i].name + "</li>");
+                    } else {
+                        $(".menu_item").append("<li class='list'>" + data.tabList[i].name + "</li>");
+                    }
+
+                }
+                $(".menu_item li").click(function() {
+                    var index = $(this).index();
+                    $(this).addClass("titleClick")
+                    $(this).siblings().removeClass("titleClick")
+                    $(".imgList li").eq(index).addClass("currentShow");
+                    $(".imgList li").eq(index).siblings().removeClass("currentShow")
+                });
+                /* 王刚 */
+                let msg = data.list;
+                msg.forEach(item => {
+                    $(".Patrol-alarm").append('<div class="alarm-list"><div class="alarm-list-detailed"><p class="alarm-left"><img src="' + item.img + '" alt=""></p><div class="alarm-right"><p class="alarm-right-detailed"><span class="alarm-data">' + item.data + '</span></p><p class="alarm-right-detailed">' + item.adress + '</p><p class="alarm-right-detailed">' + item.desc + '</p><p class="alarm-right-detailed">问题状态：<span class="alarm-reslut">' + item.status + '</span></p><p class="alarm-right-detailed">办理人员：' + item.people + '</p></div> </div></div>')
+                })
+            }
+        })
+    })
+</script>

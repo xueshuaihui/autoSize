@@ -1,0 +1,53 @@
+body {
+    width: 4800rem;
+    height: 2030rem;
+    background: #0c1625;
+}
+
+.reservoirBIM {
+    height: 100%;
+}
+
+.reservoirBIM .backPro {
+    width: 313rem;
+    height: 132rem;
+    color: #fff;
+    text-align: center;
+    border-width: 4rem;
+    border-style: solid;
+    border-color: #015fcd;
+    border-radius: 10rem;
+    line-height: 132rem;
+    cursor: pointer;
+    margin-left: 10rem;
+}
+
+.reservoirBIM .backPro:hover {
+    background: rgba(0, 155, 199, 1);
+}
+
+.reservoirBIM .backPro i {
+    font-size: 62rem;
+    float: left;
+    margin-left: 40rem;
+}
+
+.reservoirBIM .backPro span {
+    font-size: 36rem;
+    line-height: 132rem;
+    display: block;
+    float: left;
+    margin-left: 20rem;
+}
+
+.reservoirBIM .tab_content {
+    margin-top: 10rem;
+    position: relative;
+    height: 100%;
+}
+
+#iframe {
+    width: 100%;
+    height: 100%;
+    background: white;
+}

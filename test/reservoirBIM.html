@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/reservoirBIM.css">
+    <title>Document</title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="./autoSize.min.js"></script>
+</head>
+<style>
+
+</style>
+
+<body>
+    <div class="reservoirBIM">
+        <div class="backPro" onclick="javascript:history.back(-1)">
+            <i class="iconfont iconai207"></i>
+            <span>返回</span>
+        </div>
+        <div class="tab_content">
+            <div class="imgList">
+                <ul>
+                  <!--   <li class="currentShow">
+                        <img src="img/tab.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2420150664,1194504850&fm=26&gp=0.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=143486228,2507134264&fm=26&gp=0.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="https://dss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1601698318,67259196&fm=26&gp=0.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2746120682,390938867&fm=26&gp=0.jpg" alt="">
+                    </li> -->
+                </ul>
+            </div>
+
+            <div class="menuList">
+                <h3>BIM列表</h3>
+                <ul class="menu_item">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+    <script src="../../static/js/resafety-1.18.7.min.js"></script>
+    <script src="../../static/js/resafety_page.js"></script>
+<script>
+    $(function() {
+        $.ajax({
+            url: 'json/reservoirBIM.json',
+            type: 'GET',
+            dataType: 'json',
+            success: function(data) {
+                for (var i = 0; i < data.tabList.length; i++) {
+                    if (i == 0) {
+                        $(".menu_item").append("<li class='list titleClick'>" + data.tabList[i].name + "</li>");
+                    } else {
+                        $(".menu_item").append("<li class='list'>" + data.tabList[i].name + "</li>");
+                    }
+
+                }
+                $(".menu_item li").click(function() {
+                    var index = $(this).index();
+                    if(index == 0){
+                    	rs._serviceCall({
+                    		
+                    			"service_id": "camera.locate",
+                    			"pos_pose": {
+                    				"x": 113.953553,
+                    				"y": 22.580483,
+                    				"z": 1265.589371,
+                    				"course": 0.6892,
+                    				"alpha": 37.3607,
+                    				"roll": 0
+                    			},
+                    			"time": 1000
+                    		
+                    	})
+                    }else if(index == 1){
+                    	rs._serviceCall({
+                    		
+                    			"service_id": "camera.locate",
+                    			"pos_pose": {
+                    				"x": 113.953805,
+                    				"y": 22.591054,
+                    				"z": 323.999646,
+                    				"course": -29.0814,
+                    				"alpha": 36.0631,
+                    				"roll": 0
+                    			},
+                    			"time": 1000
+                    		
+                    	})
+                    }else if(index == 2){
+                    	rs._serviceCall({
+                    		
+                    			"service_id": "camera.locate",
+                    			"pos_pose": {
+                    				"x": 113.954160,
+                    				"y": 22.590401,
+                    				"z": 310.911245,
+                    				"course": -29.0819,
+                    				"alpha": 36.1532,
+                    				"roll": 0
+                    			},
+                    			"time": 1000
+                    		
+                    	})
+                    }else if(index == 3){
+                    	rs._serviceCall({
+                    		
+                    			"service_id": "camera.locate",
+                    			"pos_pose": {
+                    				"x": 113.956715,
+                    				"y": 22.591435,
+                    				"z": 295.043827,
+                    				"course": -29.1671,
+                    				"alpha": 32.1447,
+                    				"roll": -0
+                    			},
+                    			"time": 1000
+                    		
+                    	})
+                    }else{
+                    	rs._serviceCall({
+                    		
+                    			"service_id": "camera.locate",
+                    			"pos_pose": {
+                    				"x": 113.956795,
+                    				"y": 22.593837,
+                    				"z": 295.044296,
+                    				"course": -29.1671,
+                    				"alpha": 32.1447,
+                    				"roll": -0
+                    			},
+                    			"time": 1000
+                    		
+                    	})
+                    }
+                    
+                })
+            }
+        })
+    })
+</script>

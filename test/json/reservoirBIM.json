@@ -1,0 +1,270 @@
+{
+    "tabList": [
+        {
+            "name": "主坝"
+        },
+        {
+            "name": "前置库1"
+        },
+        {
+            "name": "前置库2"
+        },
+        {
+            "name": "前置库3"
+        },
+        {
+            "name": "前置库4"
+        }
+    ],
+    "list": [
+        {
+            "img": "http://img2.imgtn.bdimg.com/it/u=1202266680,3347909040&fm=26&gp=0.jpg",
+            "data": "2019-12-21  17:23:21",
+            "adress": "SP5-1视频站",
+            "desc": "非法钓鱼",
+            "status": "已处理",
+            "people": "刘成学"
+        },
+        {
+            "img": "http://img4.imgtn.bdimg.com/it/u=1906469856,4113625838&fm=26&gp=0.jpg",
+            "data": "2019-12-21  17:23:21",
+            "adress": "SP5-1视频站",
+            "desc": "非法钓鱼",
+            "status": "已处理",
+            "people": "刘成学"
+        },
+        {
+            "img": "http://img2.imgtn.bdimg.com/it/u=1202266680,3347909040&fm=26&gp=0.jpg",
+            "data": "2019-12-21  17:23:21",
+            "adress": "SP5-1视频站",
+            "desc": "非法钓鱼",
+            "status": "已处理",
+            "people": "刘成学"
+        },
+        {
+            "img": "http://img2.imgtn.bdimg.com/it/u=1202266680,3347909040&fm=26&gp=0.jpg",
+            "data": "2019-12-21  17:23:21",
+            "adress": "SP5-1视频站",
+            "desc": "非法钓鱼",
+            "status": "已处理",
+            "people": "刘成学"
+        },
+        {
+            "img": "http://img2.imgtn.bdimg.com/it/u=1202266680,3347909040&fm=26&gp=0.jpg",
+            "data": "2019-12-21  17:23:21",
+            "adress": "SP5-1视频站",
+            "desc": "非法钓鱼",
+            "status": "已处理",
+            "people": "刘成学"
+        }
+    ],
+    "注释": [
+        {
+            "type": "整体组",
+            "index": "当前组当前数据索引值",
+            "name": "名称",
+            "target": "返回字段数组长度",
+            "url": "请求地址"
+        }
+    ],
+    "checklist1": [
+        {
+            "type": 0,
+            "index": 0,
+            "name": "安全生产隐患",
+            "target": 7,
+            "url": "http://10.230.30.67/v1/sp/hiddangerlist?damId=2376",
+            "img": "安全生产隐患.png"
+        },
+        {
+            "type": 0,
+            "index": 1,
+            "name": "库区安全巡检",
+            "target": 8,
+            "url": "http://10.230.30.67/v1/ras/insp/hiddangerlist?damId=2376",
+            "img": "库区安全巡检.png"
+        },
+        {
+            "type": 0,
+            "index": 2,
+            "name": "库区安全报警",
+            "target": 8,
+            "url": "http://10.230.30.67/v1/ras/alarmlist?damId=2376",
+            "img": "库区安全报警.png"
+        },
+        {
+            "type": 0,
+            "index": 3,
+            "name": "水源安全报警",
+            "target": 0,
+            "url": "",
+            "img": ""
+        },
+        {
+            "type": 0,
+            "index": 4,
+            "name": "大坝安全巡检",
+            "target": 0,
+            "url": "",
+            "img": ""
+        }
+    ],
+    "checklist2": [
+        {
+            "type": 1,
+            "index": 0,
+            "name": "无人船",
+            "target": 0,
+            "url": "",
+            "img": ""
+        },
+        {
+            "type": 1,
+            "index": 1,
+            "name": "无人机",
+            "target": 4,
+            "url": "http://10.230.30.67/v1/mac/uva?damId=2376",
+            "img": "无人机.png"
+        },
+        {
+            "type": 1,
+            "index": 2,
+            "name": "闸泵站",
+            "target": 6,
+            "url": "http://10.230.30.67/v1/xilibase/api/supportToScreen/siteInfos/list",
+            "img": "西沥水库_闸泵站.png"
+        },
+        {
+            "type": 1,
+            "index": 3,
+            "name": "普通视频站",
+            "target": 5,
+            "url": "http://10.230.30.67/v1/mac/comvideo?damId=2376",
+            "img": "普通视频站.png"
+        },
+        {
+            "type": 1,
+            "index": 4,
+            "name": "智能视频站",
+            "target": 5,
+            "url": "http://10.230.30.67/v1/mac/aivideo/?damId=2376",
+            "img": "智能视频站.png"
+        },
+        {
+            "type": 1,
+            "index": 5,
+            "name": "水量站",
+            "target": 0,
+            "url": "",
+            "img": ""
+        },
+        {
+            "type": 1,
+            "index": 6,
+            "name": "水质站",
+            "target": 6,
+            "url": "http://10.230.30.67/v1/xilibase/api/supportToScreen/siteInfos/list",
+            "img": "水质站.png"
+        },
+        {
+            "type": 1,
+            "index": 7,
+            "name": "雨量站",
+            "target": 6,
+            "url": "http://10.230.30.67/v1/xilibase/api/supportToScreen/siteInfos/list",
+            "img": "西沥水库_雨量站.png"
+        },
+        {
+            "type": 1,
+            "index": 8,
+            "name": "水位站",
+            "target": 6,
+            "url": "http://10.230.30.67/v1/xilibase/api/supportToScreen/siteInfos/list",
+            "img": "西沥水库_水位站.png"
+        },
+        {
+            "type": 1,
+            "index": 9,
+            "name": "大坝工情",
+            "target": 0,
+            "url": "",
+            "img": ""
+        }
+    ],
+    "checklist3": [
+        {
+            "type": 2,
+            "index": 0,
+            "name": "标识牌",
+            "target": 6,
+            "url": "http://10.230.30.67/v1/ses/signboard?damId=2376",
+            "img": "标识牌.png"
+        },
+        {
+            "type": 2,
+            "index": 1,
+            "name": "出库口",
+            "target": 5,
+            "url": "http://10.230.30.67/v1/ses/outport?damId=2376",
+            "img": "出库口.png"
+        },
+        {
+            "type": 2,
+            "index": 2,
+            "name": "入库口",
+            "target": 5,
+            "url": "http://10.230.30.67/v1/ses/inport?damId=2376",
+            "img": "入库口.png"
+        },
+        {
+            "type": 2,
+            "index": 3,
+            "name": "水工建筑物",
+            "target": 0,
+            "url": "",
+            "img": "西沥水库_水工建筑物.png"
+        },
+        {
+            "type": 2,
+            "index": 4,
+            "name": "管理哨所",
+            "target": 6,
+            "url": "http://10.230.30.67/v1/ses/managepost?damId=2376",
+            "img": "管理哨所.png"
+        },
+        {
+            "type": 2,
+            "index": 5,
+            "name": "管理范围线",
+            "target": 1,
+            "url": "http://10.230.30.67/v1/ses/mrgl?damId=2376",
+            "img": ""
+        },
+        {
+            "type": 2,
+            "index": 6,
+            "name": "保护范围线",
+            "target": 1,
+            "url": "http://10.230.30.67/v1/ses/prgl?damId=2376",
+            "img": ""
+        }
+    ],
+    "checklist4": [
+        {
+            "type": 3,
+            "index": 0,
+            "name": "应急人员",
+            "target": 0,
+            "url": "",
+            "img": ""
+        },
+        {
+            "type": 3,
+            "index": 0,
+            "name": "应急物资",
+            "target": 0,
+            "url": "",
+            "img": ""
+        }
+    ]
+}
